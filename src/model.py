@@ -78,4 +78,4 @@ def get_prediction(model_type: str, dataset_type: str, x: float) -> float:
     return prediction[0]
 
 # get_prediction(model_type="ridge", dataset_type="diabetes", x=[0.038, 0.05, 0.0616, 0.021, -0.0442, -0.0348, -0.0434, -0.0025, 0.0199, -0.0176])
-
+#
