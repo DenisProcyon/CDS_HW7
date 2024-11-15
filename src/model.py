@@ -64,6 +64,9 @@ def get_model(model_type: str, data: pd.DataFrame, target_feature: str) -> Linea
     return model
 
 def get_prediction(model_type: str, dataset_type: str, x: float) -> float:
+    """
+    Function will return model if it already exists and train new, save and return if doesnt exist
+    """
     model_path = Path(__file__).parent.parent / f'models/{model_type}_{dataset_type}.pkl'
     if model_path.exists():
         with open(model_path, "rb") as file:
